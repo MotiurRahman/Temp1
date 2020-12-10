@@ -1,0 +1,96 @@
+"#leftView" : {
+//backgroundColor:Alloy.Globals.themeColor,
+layout:"vertical"
+},
+
+"#leftHeader" : {
+    width:"100%",
+    height:"200dp",
+    layout: "vertical",
+    backgroundColor:Alloy.Globals.themeColor
+},
+
+"#leftTopImage" : {
+image:"/images/logo.jpg",
+top:"20dp",
+width: "100dp",
+height: "100dp",
+borderRadius: "50dp"
+},
+
+"#leftTopText" : {
+top:"5dp",
+text:"Any Image",
+color: Alloy.Globals.themeTextColor
+},
+
+"#listViewContainer" :{
+    top:"0dp",
+    width: "100%",
+    height: "100%",
+    backgroundImage:"/images/bgimg.jpg"
+},
+
+"#Left_elementsList" : {
+    //backgroundColor:"gray",
+    separatorColor: "transparent",
+    separatorHeight: "15dp",
+    width: "100%",
+    height: Ti.UI.SIZE,
+    top:"0dp",
+   
+},
+
+"#left_itemtemplate" : {
+height:"80",
+backgroundImage:"/images/bgimg.jpg",
+width: "100%",
+   
+},
+
+"#left_listViewContainer[platform=ios]" :{
+layout:"horizontal", 
+height:"100%",
+width:"100%"
+
+},
+
+"#left_listViewContainer[platform=android]" :{
+layout:"horizontal", 
+height:"100%",
+width:"100%", 
+backgroundSelectedColor: Alloy.Globals.themeColor,
+
+},
+
+"#menuImageContainer" : {
+width:"70dp",
+height:"100%",
+left:"5dp",
+touchEnabled:"false",
+bubbleParent:"false"
+},
+
+"#menuImage" : {
+width:"70dp",
+height:"70dp",
+borderRadius:"35dp",
+touchEnabled:"false",
+bubbleParent:"false"
+},
+
+"#menutextConatiner" : {
+ width:Ti.UI.SIZE,
+ height:Ti.UI.SIZE,
+ left:"5dp",
+ touchEnabled:"false",
+ bubbleParent:"false"
+},
+
+"#menuText" : {
+width:Ti.UI.SIZE,
+height:Ti.UI.SIZE,
+touchEnabled:"false",
+bubbleParent:"false",
+color: Alloy.Globals.themeTextColorBlack
+}

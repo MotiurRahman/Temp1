@@ -1,0 +1,174 @@
+"#centerWin" : {
+backgroundColor:Alloy.Globals.themeColor
+},
+
+// Header View Container
+
+"#vwHeader" : {
+    height:"100dp",
+    width:"100%",
+    backgroundColor: Alloy.Globals.themeColor,
+    top:"0dp"
+},
+
+"#vwHeaderHamburgerContainer" : {
+    width:"100%",
+    height:"100%",
+    layout:"horizontal"
+},
+
+"#headerViewLogo" : {
+    image:"/images/logo.jpg",
+    top:"5dp",
+    left:"10dp",
+    width:"60dp",
+    height:"60dp",
+    //touchEnabled:"false"
+},
+
+"#headerViewText" : {
+    color:"#e6e7e8",
+    top:"27dp",
+    left:"24dp",
+    text:"Template 1",
+    touchEnabled:"false"
+},
+
+// List View Container
+
+"#listView" : {
+    //backgroundColor: Alloy.Globals.themeColor,
+    top: "100dp",
+    width: "100%",
+    height: "100%",
+    bottom: "100dp",
+    backgroundImage:"/images/bgimg.jpg"
+},
+
+"#dynamicListView[platform=ios]" : {
+    //backgroundColor:Alloy.Globals.themeColor,
+    separatorColor: "transparent",
+    separatorHeight: "15dp",
+    width: "100%",
+    height: Ti.UI.SIZE,
+    top: "70dp",
+    bottom: "200dp"
+    //backgroundImage:"/images/bgimg.jpg"
+},
+
+"#dynamicListView[platform=android]" : {
+    //backgroundColor:Alloy.Globals.themeColor,
+    separatorColor: "transparent",
+    separatorHeight: "15dp",
+    width: "100%",
+    height: Ti.UI.SIZE,
+    top: "0dp",
+    bottom: "200dp"
+    //backgroundImage:"/images/bgimg.jpg"
+},
+
+".search" : {
+    //width: "98%",
+    //height: "60dp",
+    top: "5dp",
+    //borderRadius: "20dp",
+    //borderWidth: "3dp",
+    hintText:"Search Your Item Here",
+    hintTextColor : Alloy.Globals.themeTextColorBlack,
+    //backgroundColor: Alloy.Globals.themeTextColor,
+    //borderColor: Alloy.Globals.themeColor
+},
+
+"#searchView" : {
+    width: "100%",
+    height: "60dp",
+    top:"0dp",
+    color: Alloy.Globals.themeTextColorBlack,
+    //borderRadius: "10dp",
+    //borderWidth: "3dp",
+    hintText:"Example: Search using item number",
+   // hintTextColor : Alloy.Globals.themeTextColorBlack,
+    backgroundColor: Alloy.Globals.themeTextColor,
+   // borderColor: Alloy.Globals.themeColor
+}
+
+
+"#itemTemplate_id" : {
+    backgroundImage:"/images/bgimg.jpg",
+    width: "100%",
+    height: "200dp",
+  //  backgroundColor: 'transparent',
+},
+
+"#listRow_Container[platform=ios]" :{
+// backgroundColor: 'transparent',
+ layout: "vertical",
+ width:"100%", 
+ height:"200dp",
+ borderRadius: "10dp"
+
+},
+
+
+"#listRow_Container[platform=android]" :{
+// backgroundColor: 'transparent',
+ layout: "vertical",
+ width:"100%", 
+ height:"200dp",
+ backgroundSelectedColor: Alloy.Globals.themeColor,
+ borderRadius: "10dp"
+},
+
+"#listView_image" : {
+    width:"200",
+    //left:"20dp",
+    //right:"20dp",
+    height:"100dp",
+    borderRadius: "10dp",
+    top:"10dp",
+    touchEnabled:"false",
+    bubbleParent:"false",
+    
+},
+"#list_label" : {
+    top: "0dp",
+    left: "5dp",
+    right: "5dp",
+    bottom: "5dp",
+    color: Alloy.Globals.themeTextColorBlack,
+    touchEnabled:"false",
+    bubbleParent:"false",
+   // wordWrap: false,
+   ellipsize: Ti.UI.TEXT_ELLIPSIZE_TRUNCATE_END,
+    
+}
+
+
+
+"#icon" : {
+    width: '50dp', height: '50dp', left: 0
+},
+"#title" : {
+    color: 'black',
+    font: { fontFamily:'Arial', fontSize: '20dp', fontWeight:'bold' },
+    left: '60dp', top: 0
+},
+"#subtitle" : {
+    color: 'gray',
+    font: { fontFamily:'Arial', fontSize: '14dp' },
+    left: '60dp', top: '25dp'
+},
+
+"#vmFooter" : {
+    height:"100",
+    width:"100%",
+    backgroundColor:"#1675d1",
+    bottom:"0dp"
+}
+
+"#Footer_label" : {
+    color:Alloy.Globals.themeTextColor,
+    top:"27dp",
+    text:"Footer",
+    touchEnabled:"false"
+}

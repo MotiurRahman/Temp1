@@ -1,0 +1,67 @@
+<Alloy>
+	<View platform="android" id="centerWin">
+		<!-- Header View Container -->
+		<View id="vwHeader">
+			<View id="vwHeaderHamburgerContainer">
+				<ImageView id="headerViewLogo" />
+				<Label id="headerViewText" />
+			</View>
+		</View>
+		<!-- ListView Container -->
+		<View id="listView">
+			<!-- <SearchBar id="searchView" /> -->
+			<ListView id="dynamicListView" onItemclick="handleItemClick" onScrollstart="scrollStart">
+				<SearchView ns="Ti.UI.Android" id="searchView" platform="android"/>
+				<Templates>
+					<ItemTemplate id="itemTemplate_id" name="image_title">
+						<View id="listRow_Container">
+							<ImageView bindId="image" id="listView_image" />
+							<Label bindId="label" id="list_label" />
+						</View>
+					</ItemTemplate>
+					Î
+				</Templates>
+				<ListSection id="element_List" />
+			</ListView>
+		</View>
+		<!-- Footer View Container -->
+		<View id="vmFooter">
+			<Label id="Footer_label">
+			</Label>
+		</View>
+	</View>
+	<Window id="centerWin" platform="ios" extendSafeArea="false">
+		<!-- Header View Container -->
+		<View id="vwHeader">
+			<View id="vwHeaderHamburgerContainer">
+				<ImageView id="headerViewLogo" />
+				<Label id="headerViewText" />
+			</View>
+		</View>
+		<!-- List View Container -->
+		<View id="listView">
+			<SearchBar class="search" onChange="updateSearch" id="searchView" />
+			<ListView id="dynamicListView" onItemclick="handleItemClick" onScrollstart="scrollStart">
+				<Templates>
+					<ItemTemplate id="itemTemplate_id" name="image_title" platform="ios">
+						<View id="listRow_Container" onTouchstart="touchStart" onTouchend="touchEnd" onTouchcancel="touchCancle">
+							<ImageView bindId="image" id="listView_image" />
+							<Label bindId="label" id="list_label" />
+						</View>
+					</ItemTemplate>
+					<ItemTemplate id="itemTemplate_id" name="image_title" platform="android">
+						<View id="listRow_Container">
+							<ImageView bindId="image" id="listView_image" />
+							<Label bindId="label" id="list_label" />
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="element_List" />
+			</ListView>
+		</View>
+		<!-- Footer view container -->
+		<View id="vmFooter">
+			<Label id="Footer_label" />
+		</View>
+	</Window>
+</Alloy>

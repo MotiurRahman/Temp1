@@ -1,0 +1,38 @@
+<Alloy>
+	<View class="container" id="leftView">
+	<!-- Header Veiw -->
+		<View id="leftHeader">
+			<ImageView id="leftTopImage" />
+			<Label id="leftTopText" />
+		</View>
+
+	<!-- Menu listview -->
+		<View id="listViewContainer">
+			<ListView id="Left_elementsList" onItemclick="handleClick">
+				<Templates>
+					<ItemTemplate name="item_title" id="left_itemtemplate" platform="ios">
+						<View id="left_listViewContainer" onTouchstart="touchStart_leftview" onTouchcancel="touchCancle_leftview" onTouchend="touchEnd_leftview">
+							<View id="menuImageContainer">
+								<ImageView bindId="image" id="menuImage" />
+							</View>
+							<View id="menutextConatiner">
+								<Label bindId="label" id="menuText" />
+							</View>
+						</View>
+					</ItemTemplate>
+					<ItemTemplate name="item_title" id="left_itemtemplate" platform="android">
+						<View id="left_listViewContainer">
+							<View id="menuImageContainer">
+								<ImageView bindId="image" id="menuImage" />
+							</View>
+							<View id="menutextConatiner">
+								<Label bindId="label" id="menuText" />
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="elementsList" />
+			</ListView>
+		</View>
+	</View>
+</Alloy>

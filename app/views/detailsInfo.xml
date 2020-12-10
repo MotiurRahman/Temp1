@@ -1,0 +1,35 @@
+<Alloy>
+	<View class="container" id="detailsContainer">
+		<!-- Header View -->
+		<View id="vwHeader_details">
+			<View id="vwHeaderHamburgerContainer_details">
+				<ImageView id="headerImg_details" onClick="goToHome_fromDetailsWind">
+				</ImageView>
+				<!--
+				<ImageView image="/images/logo.jpg" top="5dp" left="10dp" width="60dp" height="60dp" touchEnabled="false">
+				</ImageView>
+				-->
+				<Label id="headerText_details">
+				</Label>
+			</View>
+		</View>
+		<!-- ScrollView -->
+		<ScrollView id="scrollView_details">
+			<View id="scrollViewContainer_details">
+				<ImageView id="image_details" />
+				<Label id="labelDesc_details" />
+				<View id="mapView_details">
+					<Module id="mapview" module="ti.map" onClick="report" method="createView">
+						<Annotation id="appcHQ" myId="1337" />
+					</Module>
+				</View>
+				<Label id="labelContact_details" />
+			</View>
+		</ScrollView>
+		<!-- Footer View -->
+		<View id="footerView_details">
+			<Label id="footerLabel_details">
+			</Label>
+		</View>
+	</View>
+</Alloy>

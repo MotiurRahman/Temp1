@@ -1,0 +1,6 @@
+<Alloy>
+	<Window>
+		<ActionBar platform="android" displayHomeAsUp="true" onHomeIconItemSelected="onClickToggle"/>
+		<DrawerLayout id="drawer" platform="android" />
+	</Window>
+</Alloy>

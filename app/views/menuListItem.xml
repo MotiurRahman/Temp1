@@ -1,0 +1,63 @@
+<Alloy>
+	<View class="container" id="menuListItem">
+		<!-- Header View -->
+		<View id="vwHeader_menulist">
+			<View id="vwHeaderHamburgerContainer_menulist">
+				<ImageView id="headerImg_menulist" onClick="goToHome_frommenuListItemWin">
+				</ImageView>
+				<!--
+				<ImageView image="/images/logo.jpg" top="5dp" left="10dp" width="60dp" height="60dp" touchEnabled="false">
+				</ImageView>
+				-->
+				<Label id="headerText_menulist">
+				</Label>
+			</View>
+		</View>
+		<!-- HeaderView End -->
+		<!-- ScroolView Header List Item -->
+		<View id="itemListHeader_menulist">
+			<ScrollView id="scrollView_meanulist">
+				<View id="itemList1_menulist" />
+			</ScrollView>
+		</View>
+		<!-- END ScroolView Header List Item -->
+		<!-- List view XML -->
+		<View id="listView_menulist" backgroundColor="gray">
+			<ListView id="dynamicListView_menulist" onItemclick="handleItemClick_menulist">
+				<Templates>
+					<ItemTemplate name="image_title" id="itemTemplate_menulist" platform="ios">
+						<View id="listRow_container_menulist" onTouchstart="touchStart_menulistitem" onTouchend="touchEnd_menulistitem" onTouchcancel="touchCancle_menulistitem">
+							<View id="imageContainer_menulist">
+								<ImageView bindId="image" id="image_menulist" />
+							</View>
+							<View id="labelContainer_menulist">
+								<Label bindId="label" id="label_menulist" />
+							</View>
+						</View>
+					</ItemTemplate>
+					<ItemTemplate name="image_title" id="itemTemplate_menulist" platform="android">
+						<View id="listRow_container_menulist">
+							<View id="imageContainer_menulist">
+								<ImageView bindId="image" id="image_menulist" />
+							</View>
+							<View id="labelContainer_menulist">
+								<Label bindId="label" id="label_menulist" />
+							</View>
+						</View>
+					</ItemTemplate>
+					<!--
+					<ItemTemplate name="separator" height="5dp" backgroundColor="gray">
+					<View width="Ti.UI.FILL" height="5dp" />
+					</ItemTemplate>
+					-->
+				</Templates>
+				<ListSection id="section_List" />
+			</ListView>
+		</View>
+		<!-- Footer View -->
+		<View id="footerVeiw_menulist">
+			<Label id="labelFooter_menulist">
+			</Label>
+		</View>
+	</View>
+</Alloy>
