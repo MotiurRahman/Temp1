@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><ti:app xmlns:ti="http://ti.appcelerator.org">
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
     <id>com.bd.temp1</id>
     <name>Temp1</name>
     <version>1.0</version>
@@ -10,7 +11,7 @@
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>23419728-9a7e-40fa-9333-41c3ace102f5</guid>
+    <guid>9285e485-dfcb-4529-9555-41c3ace102f5</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <property name="run-on-main-thread" type="bool">true</property>
     <ios>
@@ -51,7 +52,6 @@
             <application android:theme="@style/Theme.NoActionBar">
                 <!-- Replace "YOUR_API_KEY" with the Google API key you obtained -->
                 <meta-data android:name="com.google.android.geo.API_KEY" android:value="hfjksfkashfkshfksjfhksfkjhskfhksjhfkas"/>
-                 
             </application>
             <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29"/>
         </manifest>
@@ -59,17 +59,17 @@
     <modules>
         <module platform="iphone">ti.map</module>
         <module platform="android">ti.map</module>
-        <module platform="android">dk.napp.drawer</module>
-        <module platform="iphone">dk.napp.drawer</module>
+        <module platform="android" version="3.0.0">dk.napp.drawer</module>
+        <module platform="iphone" version="2.1.1">dk.napp.drawer</module>
     </modules>
     <deployment-targets>
         <target device="android">true</target>
         <target device="ipad">true</target>
         <target device="iphone">true</target>
     </deployment-targets>
-    <sdk-version>9.1.0.GA</sdk-version>
+    <sdk-version>9.2.2.GA</sdk-version>
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
-    <property name="appc-app-id" type="string">5f530fdc838de30df8011494</property>
+    <property name="appc-app-id" type="string">5fd23f3779dbfa57cc88ae96</property>
 </ti:app>
